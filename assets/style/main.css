@@ -102,7 +102,7 @@ header {
 }
 
 .subscribe-button {
-    padding:.8em;
+    padding:.9em;
     color: #FFF;
     background-color: #6554AF;
     border: 1px solid #6554AF;
@@ -183,3 +183,38 @@ header {
 }
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .background-box {
+        width: 300px;
+    }
+
+    .img-phone img {
+        width: 500px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 992px) {
+    .background-box {
+        width: 350px;
+    }
+
+    .img-phone img {
+        width: 550px;
+    }
+
+    .subscribe-button {
+        padding:.33em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {}
+*/
