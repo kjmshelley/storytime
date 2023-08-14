@@ -83,7 +83,8 @@ app.use(helmet.contentSecurityPolicy());
 //     res.redirect("/sso");
 // });
 
-
+app.keepAliveTimeout = 120 * 1000;
+app.headersTimeout = 120 * 1000;
 app.use("/assets", express.static(path.join(__dirname, "/assets"), options));
 
 app.get("/", (req, res) => {
