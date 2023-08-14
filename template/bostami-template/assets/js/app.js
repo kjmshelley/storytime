@@ -26,12 +26,15 @@ const story = [{
         sentenceHtml: "<span class='text-bold'>小麗</span>: '呃～好吵！' 小麗剛被電視吵醒了。",
         sentencePinyin: "diànshì: jīntiān de tiānqì shì 34 dù.",
         words: [
-            { char_trad: "電視", char_simp: "电视", char_pinyin: "diànshì", zhuyin: "", meaning: "television", explaination: "" },
-            { char_trad: "今天", char_simp: "今天", char_pinyin: "jīntiān", zhuyin: "", meaning: "weather", explaination: "" },
-            { char_trad: "的", char_simp: "的", char_pinyin: "de", zhuyin: "", meaning: "'s;possession;adjective modifier", explaination: "" },
-            { char_trad: "天氣", char_simp: "天气", char_pinyin: "tiānqì", zhuyin: "", meaning: "weather", explaination: "" },
-            { char_trad: "是", char_simp: "是", char_pinyin: "shì", zhuyin: "", meaning: "to be", explaination: "" },
-            { char_trad: "度", char_simp: "度", char_pinyin: "dù", zhuyin: "", meaning: "degree", explaination: "" },
+            { char_trad: "呃", char_simp: "呃", char_pinyin: "è", zhuyin: "", meaning: "television", explaination: "" },
+            { char_trad: "好", char_simp: "今天", char_pinyin: "jīntiān", zhuyin: "", meaning: "weather", explaination: "" },
+            { char_trad: "吵", char_simp: "的", char_pinyin: "de", zhuyin: "", meaning: "'s;possession;adjective modifier", explaination: "" },
+            { char_trad: "小麗", char_simp: "天气", char_pinyin: "tiānqì", zhuyin: "", meaning: "weather", explaination: "" },
+            { char_trad: "剛", char_simp: "是", char_pinyin: "shì", zhuyin: "", meaning: "to be", explaination: "" },
+            { char_trad: "被", char_simp: "度", char_pinyin: "dù", zhuyin: "", meaning: "degree", explaination: "" },
+            { char_trad: "電視", char_simp: "度", char_pinyin: "dù", zhuyin: "", meaning: "degree", explaination: "" },
+            { char_trad: "吵醒", char_simp: "度", char_pinyin: "dù", zhuyin: "", meaning: "degree", explaination: "" },
+            { char_trad: "了", char_simp: "了", char_pinyin: "le", zhuyin: "", meaning: "degree", explaination: "" },
         ]
     }]
 }, {
