@@ -1,0 +1,33 @@
+{
+  "name": "storytime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjmshelley/storytime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjmshelley/storytime/issues"
+  },
+  "homepage": "https://github.com/kjmshelley/storytime#readme",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "moment": "^2.29.4",
+    "nocache": "^4.0.0",
+    "redis": "^4.6.7",
+    "tls": "^0.0.1",
+    "uuid": "^9.0.0"
+  }
+}
