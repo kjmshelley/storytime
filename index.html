@@ -10,7 +10,7 @@
 <body>
     <main class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-5 col-lg-5">
                 <header class="section-header">
                     <div class="header-logo">
                         <img src="assets/img/logo.svg" />
@@ -21,11 +21,22 @@
                     </div>
                 </header>
             </div>
+            <div class="col-12 col-md-4 col-lg-4">
+                <ul class="menu">
+                    <li class="menu-item">Languages</li>
+                    <li class="menu-item">About</li>
+                    <li class="menu-item">Stories</li>
+                    <li class="menu-item">Price</li>
+                    <li class="menu-item">
+                        <button class="button button-primary">Login</button>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-9 section-intro">
             <div class="col-12 col-md-5 col-lg-5">
-                <div class="section-intro-caption mb-5">
+                <div class="section-intro-caption text-appearance mb-5">
                     Learn a new language through captivating stories
                 </div>
                 <div class="section-intro-description mb-5">
@@ -36,7 +47,7 @@
                         <input type="email" class="subscribe-input" placeholder="Enter your email..." />
                     </div>
                     <div>
-                        <button class="subscribe-button">Start now</button>
+                        <button class="button button-primary subscribe-button">Start now</button>
                     </div>
                 </div>
                 <div class="ratings">
@@ -46,7 +57,7 @@
                 
             </div>
 
-            <div class="col-12 col-md-4 col-lg-4">
+            <!-- <div class="col-12 col-md-4 col-lg-4">
                 <div class="background-box-container">
                     <div class="background-box-svg">
                         <svg class="absolute -mr-3 top-8 right-1/2 lg:m-0 lg:left-0" width="404" height="392" fill="none" viewBox="0 0 404 392"><defs><pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"></rect></pattern></defs><rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect></svg>
@@ -56,9 +67,102 @@
                         <img src="assets/img/iphone.png" />
                     </div>
                 </div>
+            </div> -->
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="section-intro-img">
+                    <img src="assets/img/linguastories.png" />
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="container-fluid container-total-languages">
+        <div class="row mb-9">
+            <div class="col-12">
+                <div class="total-languages text-appearance mb-5">
+                    Read Stories in Over 20 languages
+                </div>
+                <div class="total-languages-subtext text-appearance">
+                    Our stories also comes in regional variations
+                </div>
             </div>
         </div>
 
-    </main>
+        <div class="row d-flex justify-content-center list-of-languages">
+            <div class="col-md-3 col-lg-3">
+                <ul class="language-list">
+                    <li>Chinese (Mandarin)</li>
+                    <li class="language-list-sub">
+                        <ul class="langauge-sublist">
+                            <li>Beijing</li>
+                            <li>Guangzhou</li>
+                            <li>Nanjing</li>
+                            <li>Shanghai</li>
+                            <li>Sichuan</li>
+                            <li>Singapore</li>
+                            <li>Taiwan</li>
+                        </ul>
+                    </li>
+                    <li class="language-list-sub">Chinese (Cantonese)</li>
+                    <li class="language-list-sub">Japanese</li>
+                    <li>
+                        <ul>
+                            <li>Tokyo</li>
+                            <li>Osaka</li>
+                        </ul>
+                    </li>
+                    <li class="language-list-sub">Korean</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <ul class="language-list">
+                    <li class="language-list-sub">Spanish</li>
+                    <li class="language-list-sub">
+                        <ul class="language-sublist">
+                            <li>Argentina</li>
+                            <li>Costa Rica</li>
+                            <li>Cuba</li>
+                            <li>Dominican Republic</li>
+                            <li>El Salvador</li>
+                            <li>Mexico</li>
+                            <li>Peru</li>
+                            <li>Spain</li>
+                        </ul>
+                    </li>
+                    <li>Portuguese</li>
+                    <li>
+                        <ul>
+                            <li>Portugal</li>
+                            <li>Brazil</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <ul class="language-list">
+                    <li>Cambodia</li>
+                    <li>Indonesia</li>
+                        <li>
+                            <ul>
+                                <li>Jakarta</li>
+                                <li>Kalimantan</li>
+                                <li>Sulawesi</li>
+                            </ul>
+                        </li>
+                    <li>Malay</li>
+                    <li>Tagalog</li>
+                    <li>Thai</li>
+                    <li>Vietnam</li>
+                        <li>
+                            <ul>
+                                <li>Phan Thiet</li>
+                                <li>Ho Chi</li>
+                            </ul>
+                        </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>

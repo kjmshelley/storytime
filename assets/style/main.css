@@ -1,5 +1,6 @@
 * {
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    --purple: #6064e3;
 }
 
 /* * {
@@ -26,6 +27,39 @@ header {
     margin-left: 5px;
 }
 
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-item {
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+
+.button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 1;
+    font-weight: 500;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+.button-primary {
+    background-color: var(--purple);
+}
 /********************* sections height *********************
 ************************************************************
 ************************************************************/
@@ -46,17 +80,14 @@ header {
 .mb-5 { margin-bottom: 25px; }
 .mb-6 { margin-bottom: 30px; }
 .mb-7 { margin-bottom: 35px; }
+.mb-8 { margin-bottom: 40px; }
+.mb-9 { margin-bottom: 45px; }
 
 /************************************************************
 ************************************************************
 ********************* end margin bottom ********************/
 
-.section-intro {
-    display: flex;
-    flex-direction: row;
-}
-
-.section-intro-caption {
+.text-appearance {
     font-size: 3.75rem;
     font-weight: 900;
     line-height: 1;
@@ -64,10 +95,30 @@ header {
     color: #2B2730;
 }
 
+.section-intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-intro-caption {
+}
+
 .section-intro-description {
     color: #6554AF;
     font-size: 2rem;
     letter-spacing: 1.5px;
+}
+
+.section-intro-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-intro-img img {
+    height: 350px;
 }
 
 .subscribe-container {
@@ -102,10 +153,7 @@ header {
 }
 
 .subscribe-button {
-    padding:.9em;
-    color: #FFF;
-    background-color: #6554AF;
-    border: 1px solid #6554AF;
+    padding:1em;
     font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;
@@ -148,7 +196,7 @@ header {
 }
 
 .ratings-type-divider {
-    border-left: 1.5px solid #cecece;
+    border-left: 1.5px solid #aeadad;
 }
 
 .background-box-container {
@@ -182,6 +230,42 @@ header {
     width: 600px;
 }
 
+.container-total-languages {
+    background-color: #fbfbfd;
+    padding: 2em;
+}
+
+.total-languages {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.total-languages-subtext {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.language-list {
+    list-style: none;
+}
+
+.language-list-sub {
+    list-style: none;
+}
+
+.language-sublist {
+
+}
+
+.list-of-languages {
+    display: flex;
+
+}
+
+.list-of-languages ul li {
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
