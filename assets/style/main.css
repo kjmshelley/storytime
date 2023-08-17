@@ -96,10 +96,10 @@ header {
 }
 
 .text-appearance-normal {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1;
     letter-spacing: 1.8px;
-    color: #2B2730;
+    color: #fff;
 }
 
 .section-intro {
@@ -239,18 +239,24 @@ header {
 }
 
 .container-total-languages {
-    background-color: #fbfbfd;
+    background-image: url("/assets/img/bg-04.jpg");
     padding: 2em;
 }
 
 .total-languages {
     text-align: center;
     font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.75px;
+    color: #FFF;
 }
 
 .total-languages-subtext {
     font-size: 2rem;
     text-align: center;
+    font-weight: 500;
+    letter-spacing: -0.75px;
+    color: #FFF;
 }
 
 .language-list {
@@ -275,6 +281,9 @@ header {
     letter-spacing: 1.5px;
 }
 
+.language-dialects {
+    font-size: 2rem;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .background-box {
