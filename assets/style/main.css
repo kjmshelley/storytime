@@ -1,6 +1,12 @@
 * {
     font-family: 'Rubik', sans-serif;
     --purple: #6064e3;
+
+    --beige: #fad2b1;
+    --pinky: #ff9b76;
+    --orangey: #e07258;
+    --burgundy-light:#772233;
+    --burgundy: #4e0822;
 }
 
 /* * {
@@ -39,6 +45,15 @@ header {
     padding: 2rem;
 }
 
+.text-appearance {
+    font-size: 3.75rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 1.8px;
+    color: #2B2730;
+}
+
+
 .button {
     background-color: transparent;
     color: #fff;
@@ -58,7 +73,7 @@ header {
 }
 
 .button-primary {
-    background-color: var(--purple);
+    background-color: var(--orangey);
 }
 /********************* sections height *********************
 ************************************************************
@@ -87,19 +102,25 @@ header {
 ************************************************************
 ********************* end margin bottom ********************/
 
-.text-appearance {
-    font-size: 3.75rem;
-    font-weight: 900;
-    line-height: 1;
-    letter-spacing: 1.8px;
-    color: #2B2730;
-}
+/********************** color ***********************
+************************************************************
+************************************************************/
+.primary { color: var(--burgundy); }
+.secondary { color: var(--burgundy-light); }
+.tenary { color: var(--orangey); }
+.fourth { color: var(--pinky); }
+
+/************************************************************
+************************************************************
+********************* end color ********************/
+
+
 
 .text-appearance-normal {
     font-size: 1.8rem;
     line-height: 1;
     letter-spacing: 1.8px;
-    color: #fff;
+    color: #FFF;
 }
 
 .section-intro {
@@ -112,7 +133,7 @@ header {
 }
 
 .section-intro-description {
-    color: #6554AF;
+    color: var(--burgundy);
     font-size: 2rem;
     letter-spacing: 1.5px;
 }
@@ -239,13 +260,13 @@ header {
 }
 
 .container-total-languages {
-    background-image: url("/assets/img/bg-04.jpg");
-    padding: 2em;
+    /* background-image: url("/assets/img/bg-04.jpg"); */
+    background-color: var(--purple);
+    padding: 50px 10px;
 }
 
 .total-languages {
-    text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
     letter-spacing: -0.75px;
     color: #FFF;
@@ -284,6 +305,29 @@ header {
 .language-dialects {
     font-size: 2rem;
 }
+
+.language-dialects-options {
+    font-size: 1.8rem;
+    margin: 20px;
+}
+
+.language-level-list {
+    font-size: 2.5rem;
+}
+
+.language-level-list ul {
+    font-size: 2rem;
+}
+
+.language-level-list ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.topics-container {
+    height: 300px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .background-box {
