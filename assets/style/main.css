@@ -45,6 +45,17 @@ header {
 .menu-item {
     font-size: 1.7rem;
     padding: 2rem;
+    color: var(--text-color);
+}
+
+.menu-item a:link, .menu-item:visited {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.menu-item:hover, .menu-item a:hover {
+    background-color: var(--orangey);
+    color: #FFF;
+    cursor: pointer;
 }
 
 .text-appearance {
@@ -75,6 +86,12 @@ header {
 
 .button-primary {
     background-color: var(--orangey);
+}
+
+.button-primary:hover {
+    background-color: var(--burgundy-light);
+    color: #FFF;
+    border: 1px solid var(--burgundy-light);
 }
 /********************* sections height *********************
 ************************************************************
@@ -194,8 +211,9 @@ header {
 }
 
 .subscribe-button:hover {
-    background-color: #9575DE;
-    border: 1px solid #9575DE;
+    background-color: var(--burgundy-light);
+    color: #FFF;
+    border: 1px solid var(--burgundy-light);
 }
 
 .ratings {
@@ -308,6 +326,7 @@ header {
 
 .list-of-languages {
     display: flex;
+    justify-content: center;
 
 }
 
