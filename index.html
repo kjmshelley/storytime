@@ -9,7 +9,51 @@
 </head>
 <body>
     <main class="container">
-        <div class="row">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <a class="navbar-brand" href="#">
+                        <header class="section-header">
+                            <div class="header-title">
+                                <span style="color:#772233">Lingua</span>
+                                <span style="color:#e07258">Stories</span>
+                            </div>
+                        </header>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow:0!important">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-md-none">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Languages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Level</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Price</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-end">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#languages">Languages</a></li>
+                            <li class="menu-item"><a href="#languages">Level</a></li>
+                            <li class="menu-item"><a href="#languages">Stories</a></li>
+                            <li class="menu-item"><a href="#languages">Price</a></li>
+                            <li class="menu-item">
+                                <button class="button button-primary">Login</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
                 <header class="section-header">
                     <div class="header-title">
@@ -29,7 +73,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
 
         <div class="row section-intro">
             <div class="col-12 col-md-6 col-lg-6">
@@ -73,7 +117,7 @@
         </div>
     </main>
 
-    <div class="container-fluid total-languages-container mb-9">
+    <div class="container-fluid total-languages-container">
         <div class="total-languages mb-2">
             Stories in Over 20 languages
         </div>
@@ -86,7 +130,7 @@
                 <ul class="language-list">
                     <li>Arabic</li>
                     <li class="language-list-sub">
-                        <ul class="langauge-sublist">
+                        <ul class="language-sublist">
                             <li>Egypt</li>
                             <li>Standard</li>
                         </ul>
@@ -94,7 +138,7 @@
                     <li>Cambodia</li>
                     <li>Chinese (Mandarin)</li>
                     <li class="language-list-sub">
-                        <ul class="langauge-sublist">
+                        <ul class="language-sublist">
                             <li>Beijing</li>
                             <li>Guangzhou</li>
                             <li>Nanjing</li>
@@ -111,15 +155,14 @@
                 <ul class="language-list">
                     <li class="language-list-sub">Dutch</li>
                     <li>
-                        <ul>
+                        <ul class="language-sublist">
                             <li>Belgium</li>
                             <li>Holland</li>
                         </ul>
                     </li>
                     <li class="language-list-sub">French</li>
                     <li>
-                        <ul>
-                            
+                        <ul class="language-sublist">
                             <li>Haiti</li>
                             <li>Morocco</li>
                             <li>Paris</li>
@@ -154,7 +197,7 @@
                     </li>
                     <li>Portuguese</li>
                     <li>
-                        <ul>
+                        <ul class="language-sublist">
                             <li>Portugal</li>
                             <li>Brazil</li>
                         </ul>
@@ -165,7 +208,7 @@
                 <ul class="language-list">
                     <li>Indonesia</li>
                     <li>
-                        <ul>
+                        <ul class="language-sublist">
                             <li>Jakarta</li>
                             <li>Kalimantan</li>
                             <li>Sulawesi</li>
@@ -176,12 +219,33 @@
                     <li>Thai</li>
                     <li>Vietnam</li>
                         <li>
-                            <ul>
+                            <ul class="language-sublist">
                                 <li>Phan Thiet</li>
                                 <li>Ho Chi</li>
                             </ul>
                         </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid stats mb-9">
+        <div class="row">
+            <div class="col-3 stat-group">
+                <div class="stat">20</div>
+                <div class="stat">languages</div>
+            </div>
+            <div class="col-3 stat-group">
+                <div class="stat">12</div>
+                <div class="stat">dialects</div>
+            </div>
+            <div class="col-3 stat-group">
+                <div class="stat">1,012</div>
+                <div class="stat">stories</div>
+            </div>
+            <div class="col-3 stat-group">
+                <div class="stat">3000</div>
+                <div class="stat">dialogues</div>
             </div>
         </div>
     </div>
@@ -202,10 +266,10 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-12 stories-level-right">
-                    <div class="row mb-9">
+                    <div class="row mb-7">
                         <div class="col-12">
                             <div class="stories-level-caption mb-2">
-                                Level Base Stories
+                                Personalize Stories
                             </div>
                         </div>
                     </div>
@@ -235,12 +299,14 @@
             </div>
         </div>
     </div>
+    
 
     <div class="container-fluid topics-container">
         <div class="topics-title">
             Stories about 200 topics
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

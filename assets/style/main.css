@@ -320,8 +320,8 @@ header {
     list-style: none;
 }
 
-.language-sublist {
-
+.language-sublist li {
+    margin-left: 10px;
 }
 
 .list-of-languages {
@@ -359,6 +359,21 @@ header {
 
 .topics-container {
     height: 300px;
+}
+
+.stats {
+    font-size: 3rem;
+    background-color: #f6f6f6;
+}
+
+.stat-group {
+    border-left: 1px solid #c5c5c5;
+    padding: 3rem;
+}
+
+.stat {
+    text-align: center;
+    font-weight: 900;
 }
 
 .stories-level-container {
