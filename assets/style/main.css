@@ -281,7 +281,7 @@ header {
 }
 
 .img-phone img {
-    width: 300px;
+    width: 600px;
 }
 
 .container-total-languages {
@@ -314,6 +314,10 @@ header {
 
 .language-list {
     list-style: none;
+}
+
+.language-list-parent {
+    font-weight: bold;
 }
 
 .language-list-sub {
@@ -412,6 +416,61 @@ header {
     justify-content: center;
     color: var(--text-color);
 }
+
+.story-list img {
+    height: 30%;
+}
+
+.story-list p {
+    font-size: 2rem;
+}
+
+.topics {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-holder {
+    position: relative;
+}
+
+.img-card {
+    position: absolute;
+}
+
+.img-card img {
+    height: 300px;
+}
+
+.img-card1 {
+    top: 0;
+    left: 0;
+}
+
+.img-card2 {
+    top: 150px;
+    left: 150px;
+}
+
+.img-card3 {
+    top: 0;
+    right: 0;
+}
+
+@keyframes GFG {
+    0% {
+        transform: rotate(0deg) 
+              translateY(100px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+              translateY(100px) rotate(-360deg);
+    }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .background-box {
