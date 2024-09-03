@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Order Food</h1>
+        <div>
+            <label>Item</label>
+            <input type="text" />
+        </div>
+
+        <div>
+            <label>Price</label>
+            <input id="price" type="text" />
+        </div>
+
+        <div>
+            <label>Tax</label>
+            <input id="tax" type="text" value="0.08" />
+        </div>
+        <button>Calculate</button>
+    </form>
+
+    <script>
+        document.querySelector("button").addEventListener("click", evt => {
+            const price = document.querySelector("#price").value;
+            const tax = document.querySelector("#tax").value;
+            alert(parseFloat(price) + (parseFloat(price) * parseFloat(tax)));
+        });
+        
+
+    </script>
+</body>
+</html>

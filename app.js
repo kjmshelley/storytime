@@ -57,11 +57,11 @@ app.use((req, res, next) => {
   res.set('Cache-Control', 'no-store')
   next()
 });
-app.use(helmet());
+//app.use(helmet());
 app.use(nocache());
 app.disable('X-Powered-By');
 app.use(helmet.hidePoweredBy());
-app.use(helmet.contentSecurityPolicy());
+//app.use(helmet.contentSecurityPolicy());
 
 // app.use((req, res, next) => {
 //     if (req.path.endsWith("manifest.json") || req.session.idx || req.path === "/sso") {
@@ -89,6 +89,10 @@ app.use("/assets", express.static(path.join(__dirname, "/assets"), options));
 
 app.get("/", (req, res) => {
     res.status(200).sendFile(path.join(__dirname, "/index.html"));
+});
+
+app.get("/dashboard", (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, "/dashboard.html"));
 });
 
 app.all("*", (req, res) => {

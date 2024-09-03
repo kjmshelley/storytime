@@ -1,0 +1,120 @@
+* {
+    font-family:"Literata", serif;
+}
+
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+
+}
+
+/* Article container styling */
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title styling */
+.article-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Author and date information styling */
+.article-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Article content styling */
+.article-content {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Styling for images within the article */
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.story-paragraph {
+    display: flex;
+    flex-direction: row;
+}
+
+.story-paragraph-section {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.story-paragraph-section p {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.grammar-sentence-pattern {
+    display: flex;
+    flex-direction: row;
+}
+
+.grammar-pos {
+    padding: 10px;
+}
+
+.grammar-subject {
+    background-color: rgb(249 249 182);
+    border: 3px yellow solid;
+}
+
+.grammar-point {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.grammar-verb {
+    background-color: rgb(172, 201, 255);
+    border: 3px blue solid;
+}
+
+.grammar-object {
+    background-color: rgb(204, 249, 182);
+    border: 3px green solid;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}

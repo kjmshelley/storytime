@@ -291,9 +291,15 @@ header {
 }
 
 .total-languages-container {
-    padding: 3em;
-    background-color: #fad2b1; 
+    /* background-color: #fad2b1;  */
     /*var(--pinky);*/
+}
+
+.a {
+    background-color: #fad2b1;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .total-languages {
@@ -496,6 +502,17 @@ header {
         padding:.33em;
     }
 }
+
+.list-of-story {
+    margin: 0;
+}
+
+.library {
+    background-color: #8e546b;
+    color: #FFF;
+    font-size: 3rem;
+}
+
 
 /* Medium devices (landscape tablets, 768px and up)
 @media only screen and (min-width: 768px) {}

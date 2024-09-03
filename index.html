@@ -1,340 +1,1268 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lingua Stories</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style/main.css" />
-</head>
-<body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="navbar-brand">
-                    <a class="navbar-brand" href="#">
-                        <header class="section-header">
-                            <div class="header-title">
-                                <span style="color:#772233">Lingua</span>
-                                <span style="color:#e07258">Stories</span>
-                            </div>
-                        </header>
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow:0!important">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-md-none">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Languages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Level</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Stories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Price</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex justify-content-end">
-                        <ul class="menu">
-                            <li class="menu-item"><a href="#languages">Languages</a></li>
-                            <li class="menu-item"><a href="#languages">Level</a></li>
-                            <li class="menu-item"><a href="#languages">Stories</a></li>
-                            <li class="menu-item"><a href="#languages">Price</a></li>
-                            <li class="menu-item">
-                                <button class="button button-primary">Login</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+	<head>
 
-    <div class="container mb-9">
-        
-        <!-- <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-                <header class="section-header">
-                    <div class="header-title">
-                        <span style="color:#772233">Lingua</span>
-                        <span style="color:#e07258">Stories</span>
-                    </div>
-                </header>
-            </div>
-            <div class="col-12 col-md-4 col-lg-4" style="display:flex">
-                <ul class="menu">
-                    <li class="menu-item"><a href="#languages">Languages</a></li>
-                    <li class="menu-item"><a href="#languages">Level</a></li>
-                    <li class="menu-item"><a href="#languages">Stories</a></li>
-                    <li class="menu-item"><a href="#languages">Price</a></li>
-                    <li class="menu-item">
-                        <button class="button button-primary">Login</button>
-                    </li>
-                </ul>
-            </div>
-        </div> -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="author" content="LinguaStories"/>	
+		<meta name="description" content="LinguaStories - The language platform to learn languages through stories, active listening practice and an engaging community."/>
+		<meta name="keywords" content="Language, Languages, Foreign Languages, Studying, Reading, Online Platform, Startup">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				
+  		<!-- SITE TITLE -->
+		<title>Lingua Stories</title>
+							
+		<!-- FAVICON AND TOUCH ICONS -->
+		<link rel="shortcut icon" href="/assets/templates/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/assets/templates/images/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="152x152" href="/assets/templates/images/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/assets/templates/images/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/assets/templates/images/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" href="/assets/templates/images/apple-touch-icon.png">
+		<link rel="icon" href="/assets/templates/images/apple-touch-icon.png" type="image/x-icon">
 
-        <div class="row section-intr">
-            <div class="col-md-6 col-lg-6">
-                <div class="section-intro-caption mb-5">
-                    Learn a new language through <span style="color:#e07258;text-decoration:underline;">captivating</span> stories in a structured environment
-                </div>
-                <div class="section-intro-description mb-5">
-                    LinguaStories helps you learn a foreign language through short and engaging stories. Start your language learning journey today!
-                </div>
-                <div class="subscribe-container mb-3">
-                    <div class="subscribe-input-container">
-                        <input type="email" class="subscribe-input" placeholder="Enter your email..." />
-                    </div>
-                    <div>
-                        <button class="button button-primary subscribe-button">Start now</button>
-                    </div>
-                </div>
-                <div class="ratings">
-                    <div class="ratings-type">14 days free trial</div>
-                    <div class="ratings-type ratings-type-divider">No credit card required</div>
-                </div>
-                
-            </div>
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-            <!-- <div class="col-12 col-md-4 col-lg-4">
-                <div class="background-box-container">
-                    <div class="background-box-svg">
-                        <svg class="absolute -mr-3 top-8 right-1/2 lg:m-0 lg:left-0" width="404" height="392" fill="none" viewBox="0 0 404 392"><defs><pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"></rect></pattern></defs><rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"></rect></svg>
-                    </div>
-                    <div class="background-box"></div>
-                    <div class="img-phone">
-                        <img src="assets/img/iphone.png" />
-                    </div>
-                </div>
-            </div> -->
-            <div class="col-md-6 col-lg-6">
-                <div class="section-intro-img">
-                    <img src="assets/img/linguastories.png" />
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- BOOTSTRAP CSS -->
+		<link href="/assets/templates/css/bootstrap.min.css" rel="stylesheet">
+				
+		<!-- FONT ICONS -->
+		<link href="/assets/templates/css/flaticon.css" rel="stylesheet">
 
-    <div class="row total-languages-container">
-        <div class="col-12">
-            <div class="total-languages mb-2">
-                Stories in Over 20 languages
-            </div>
-            <div class="total-languages-subtext mb-6">
-                Read & listen to stories in regional accents & dialects
-            </div>
+		<!-- PLUGINS STYLESHEET -->
+		<link href="/assets/templates/css/menu.css" rel="stylesheet">	
+		<link id="effect" href="/assets/templates/css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+		<link href="/assets/templates/css/magnific-popup.css" rel="stylesheet">	
+		<link href="/assets/templates/css/owl.carousel.min.css" rel="stylesheet">
+		<link href="/assets/templates/css/owl.theme.default.min.css" rel="stylesheet">
 
-            <div class="row d-flex justify-content-center list-of-languages">
-                <div class="col-md-2 col-lg-2">
-                    <ul class="language-list">
-                        <li class="language-list-parent">Arabic</li>
-                        <li class="language-list-sub">
-                            <ul class="language-sublist">
-                                <li>Egypt</li>
-                                <li>Standard</li>
-                            </ul>
-                        </li>
-                        <li class="language-list-parent">Cambodia</li>
-                        <li class="language-list-parent">Chinese (Mandarin)</li>
-                        <li class="language-list-sub">
-                            <ul class="language-sublist">
-                                <li>Beijing</li>
-                                <li>Guangzhou</li>
-                                <li>Nanjing</li>
-                                <li>Shanghai</li>
-                                <li>Sichuan</li>
-                                <li>Singapore</li>
-                                <li>Taiwan</li>
-                            </ul>
-                        </li>
-                        <li class="language-list-parent">Chinese (Cantonese)</li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-lg-2">
-                    <ul class="language-list">
-                        <li class="language-list-parent">Dutch</li>
-                        <li>
-                            <ul class="language-sublist">
-                                <li>Belgium</li>
-                                <li>Holland</li>
-                            </ul>
-                        </li>
-                        <li class="language-list-parent">French</li>
-                        <li>
-                            <ul class="language-sublist">
-                                <li>Haiti</li>
-                                <li>Morocco</li>
-                                <li>Paris</li>
-                                <li>Quebec</li>
-                            </ul>
-                        </li>
-                        <li class="language-list-parent">German</li>
-                        <li class="language-list-parent">Japanese</li>
-                        <li>
-                            <ul>
-                                <li>Tokyo</li>
-                                <li>Osaka</li>
-                            </ul>
-                        </li>
-                        <li class="language-list-parent">Korean</li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-lg-2">
-                    <ul class="language-list">
-                        <li class="language-list-parent">Spanish</li>
-                        <li class="language-list-sub">
-                            <ul class="language-sublist">
-                                <li>Argentina</li>
-                                <li>Costa Rica</li>
-                                <li>Cuba</li>
-                                <li>Dominican Republic</li>
-                                <li>El Salvador</li>
-                                <li>Mexico</li>
-                                <li>Peru</li>
-                                <li>Spain</li>
-                            </ul>
-                        </li>
-                        <li class="language-list-parent">Portuguese</li>
-                        <li>
-                            <ul class="language-sublist">
-                                <li>Portugal</li>
-                                <li>Brazil</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-lg-2">
-                    <ul class="language-list">
-                        <li class="language-list-parent">Indonesia</li>
-                        <li>
-                            <ul class="language-sublist">
-                                <li>Jakarta</li>
-                                <li>Kalimantan</li>
-                                <li>Sulawesi</li>
-                            </ul>
-                        </li>
-                        <li class="language-list-parent">Malay</li>
-                        <li class="language-list-parent">Tagalog</li>
-                        <li class="language-list-parent">Thai</li>
-                        <li class="language-list-parent">Vietnam</li>
-                            <li>
-                                <ul class="language-sublist">
-                                    <li>Phan Thiet</li>
-                                    <li>Ho Chi</li>
-                                </ul>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- ON SCROLL ANIMATION -->
+		<link href="/assets/templates/css/animate.css" rel="stylesheet">
 
-    <div class="container-fluid stats mb-9">
-        <div class="row">
-            <div class="col-3 stat-group">
-                <div class="stat">20</div>
-                <div class="stat">languages</div>
-            </div>
-            <div class="col-3 stat-group">
-                <div class="stat">12</div>
-                <div class="stat">dialects</div>
-            </div>
-            <div class="col-3 stat-group">
-                <div class="stat">1,012</div>
-                <div class="stat">stories</div>
-            </div>
-            <div class="col-3 stat-group">
-                <div class="stat">3000</div>
-                <div class="stat">dialogues</div>
-            </div>
-        </div>
-    </div>
+		<!-- TEMPLATE CSS -->
+		<link href="/assets/templates/css/style.css" rel="stylesheet"> 
+		
+		<!-- RESPONSIVE CSS -->
+		<link href="/assets/templates/css/responsive.css" rel="stylesheet">
 
-    <div class="container-fluid stories-level-container">
-        <div class="stories-level">
-            <div class="row">
+		<style>
+			.header-title {
+				font-size: 32px;
+			}
 
-                <div class="col-md-7 col-lg-7 col-12">
-                    <div class="img-phone">
-                        <img src="assets/img/people.png" />
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-12 stories-level-right">
-                    <div class="row mb-7">
-                        <div class="col-12">
-                            <div class="stories-level-caption mb-2">
-                                Adapt Stories to Your Level and Region                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <ul>
-                        <li class="stories-level-benefits mb-3">
-                            Read stories base on your level & interest
-                        </li>
-                        <li class="stories-level-benefits mb-3">
-                            Read each story in 4 different levels
-                            <ul>
-                                <li>Beginner</li>
-                                <li>Intermediate</li>
-                                <li>Advance</li>
-                                <li>Native</li>
-                            </ul>
-                        </li>
-                        <li class="stories-level-benefits mb-3">
-                            Read & listen to each story in different regional accents
-                        </li>
-                        <li class="stories-level-benefits mb-3">
-                            Convert stories to learning paths
-                        </li>
-                    </ul>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
+			.language-list {
+				list-style: none;
+			}
 
-    <section class="container-fluid my-5">
-        <h2>Our Library is a Treasure Trove of Stories!</h2>
-        <h4>Stories about 200 topics</h4>
-        <div class="row">
-            <div class="col-md-3 text-center story-list">
-                <img src="assets/img/Xiaoli.png" alt="English Story" class="img-fluid">
-                <p>XiaoLi Crazy's Day</p>
-            </div>
-            <div class="col-md-3 text-center story-list">
-                <img src="assets/img/chinese.png" alt="Spanish Story" class="img-fluid">
-                <p>Jun Jun Travels the World</p>
-            </div>
-            <div class="col-md-3 text-center story-list">
-                <img src="assets/img/endofworld.png" alt="Chinese Story" class="img-fluid">
-                <p>The End of Time</p>
-            </div>
-            <div class="col-md-3 text-center story-list">
-                <img src="assets/img/cars.png" alt="French Story" class="img-fluid">
-                <p>Test of Speed</p>
-            </div>
-        </div>
-    </section>
+			.language-list-parent {
+				font-weight: bold;
+			}
 
-    <!-- Footer -->
-    <footer class="container-fluid bg-dark text-white text-center py-4">
-        <p>Visit us Below</p>
-        <div>
-            <a href="#"><img src="facebook-icon.png" alt="YouTube"></a>
-            <a href="#"><img src="twitter-icon.png" alt="LinkedIn"></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-        </div>
-    </footer>
+			.language-list-sub {
+				list-style: none;
+			}
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
-</body>
+			.language-sublist li {
+				margin-left: 10px;
+			}
+
+			.list-of-languages {
+				display: flex;
+				justify-content: center;
+
+			}
+
+			.list-of-languages ul li {
+				/* font-size: 1.7rem; */
+				letter-spacing: 1.5px;
+			}
+
+			.language-dialects {
+				font-size: 2rem;
+			}
+
+			.language-dialects-options {
+				font-size: 1.8rem;
+				margin: 20px;
+			}
+
+			.language-level-list {
+				font-size: 2.5rem;
+			}
+
+			.language-level-list ul {
+				font-size: 2rem;
+			}
+
+			.language-level-list ul li {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+
+
+
+	<body>
+
+
+
+
+		<!-- PRELOADER SPINNER
+		============================================= -->	
+		<div id="loading" class="skyblue-loading">
+			<div id="loading-center">
+				<div id="loading-center-absolute">
+					<div class="object" id="object_one"></div>
+					<div class="object" id="object_two"></div>
+					<div class="object" id="object_three"></div>
+					<div class="object" id="object_four"></div>
+				</div>
+			</div>
+		</div>
+		<!-- PAGE CONTENT
+		============================================= -->	
+		<div id="page" class="page">
+			<!-- HEADER
+			============================================= -->
+			<header id="header" class="header tra-menu navbar-dark">
+				<div class="header-wrapper">
+
+
+					<!-- MOBILE HEADER -->
+				    <div class="wsmobileheader clearfix">	  	
+				    	<!-- <span class="smllogo"><img src="images/logo-01.png" alt="mobile-logo"/></span> -->
+						<div class="navbar-brand">
+							<a class="navbar-brand" href="#">
+								<header class="section-header">
+									<div class="header-title">
+										<span style="color:#772233">Lingua</span>
+										<span style="color:#e07258">Stories</span>
+									</div>
+								</header>
+							</a>
+						</div>
+				    	<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>	
+				 	</div>
+
+
+				 	<!-- NAVIGATION MENU -->
+				  	<div class="wsmainfull menu clearfix">
+	    				<div class="wsmainwp clearfix">
+	    					<!-- HEADER LOGO -->
+	    					<div class="desktoplogo"><a href="#hero-18" class="logo-black"><img src="/assets/templates/images/logo-header.png" alt="header-logo"></a></div>
+	    					<div class="desktoplogo"><a href="#hero-18" class="logo-white"><img src="/assets/templates/images/logo-header.png" alt="header-logo"></a></div>
+
+	    					<!-- MAIN MENU -->
+	      					<nav class="wsmenu clearfix">
+	        					<ul class="wsmenu-list nav-skyblue-hover">
+
+
+	        						<!-- MEGAMENU -->
+						          	<li aria-haspopup="true"><a href="#">Home</a>
+								    </li>	<!-- END MEGAMENU -->
+
+
+	        						<!-- DROPDOWN MENU -->
+						          	<li aria-haspopup="true"><a href="#">About</a>
+								    </li>
+
+
+							    	<!-- DROPDOWN MENU -->
+						        	<li aria-haspopup="true"><a href="#">Pages</a>
+						          	</li>	<!-- END DROPDOWN MENU -->
+
+
+						          	<!-- SIMPLE NAVIGATION LINK -->
+							    	<li class="nl-simple" aria-haspopup="true"><a href="#features-4">Features</a></li>
+
+
+						          	<!-- SIMPLE NAVIGATION LINK -->
+							    	<li class="nl-simple" aria-haspopup="true"><a href="#pricing-3">Pricing</a></li>
+
+
+							    	<!-- SIMPLE NAVIGATION LINK --> 
+							    	<li class="nl-simple" aria-haspopup="true"><a href="#faqs-2">FAQs</a></li>
+
+									<!-- HEADER SOCIAL LINKS 													
+									<li class="nl-simple white-color header-socials ico-20 clearfix" aria-haspopup="true">
+										<span><a href="#" class="ico-facebook"><span class="flaticon-facebook"></span></a></span>
+										<span><a href="#" class="ico-twitter"><span class="flaticon-twitter"></span></a></span>
+										<span><a href="#" class="ico-instagram"><span class="flaticon-instagram"></span></a></span>
+										<span><a href="#" class="ico-dribbble"><span class="flaticon-dribbble"></span></a></span>	
+									</li> -->	
+
+
+	        					</ul>
+	        				</nav>	<!-- END MAIN MENU -->
+
+
+	    				</div>
+	    			</div>	<!-- END NAVIGATION MENU -->
+
+
+				</div>     <!-- End header-wrapper -->
+			</header>	<!-- END HEADER -->
+
+
+
+
+			<!-- HERO-18
+			============================================= -->	
+			<section id="hero-18" class="rel bg-snow hero-section division">
+				<div class="container">	
+					<div class="row d-flex align-items-center">
+
+
+						<!-- HERO REQUEST FORM -->
+						<div class="col-md-7 col-lg-6">
+							<div id="hero-18-form">
+
+								<!-- Title -->
+								<h2 class="h2-sm">
+									Learn a new language through <span style="color:#e07258;text-decoration:underline;">captivating</span> stories in a structured environment
+								</h2>
+
+								<!-- Form -->
+								<form name="requestForm" class="row request-form">
+
+                                    <!-- Form Input -->
+					                <div class="col-md-12">
+					                	<input type="email" name="email" class="form-control email" placeholder="Your email address" autocomplete="off" required>
+					                </div>
+
+									<!-- Form Button -->
+					                <div class="col-md-12 form-btn mt-15">  
+					                	<button type="submit" class="btn btn-md submit" style="background-color: #e07258; border: 1px solid #e07258; color: #FFF;">Get Started Now</button>
+					                </div>
+					                                                              
+					                <!-- Form Message -->
+					                <div class="col-md-12 request-form-msg text-center">
+					                	<span class="loading"></span>
+					                </div>  
+					                                              
+					            </form>
+
+					            <!-- Advantages List -->
+								<ul class="advantages clearfix mt-20">
+									<li class="first-li"><p>14 days free trial</p></li>
+									<li class="last-li"><p>No credit card required</p></li>
+								</ul>
+
+						    </div>	<!-- END FORM -->
+						</div>	<!-- END HERO REQUEST FORM -->
+
+
+						<!-- HERO IMAGE -->
+						<div class="col-md-5 col-lg-6">	
+							<div class="hero-18-img wow fadeInLeft">				
+								<!-- <img class="img-fluid" src="images/hero-18-img.png" alt="hero-image"> -->
+								<img class="img-fluid" src="/assets/templates/images/linguastories.png" alt="hero-image">							</div>
+						</div>
+
+
+					</div>    <!-- End row --> 	
+				</div>	   <!-- End container --> 	
+			</section>	<!-- END HERO-18 -->	
+
+
+
+
+			<!-- FEATURES-1
+			============================================= -->
+			<section id="features-1" class="bg-snow pt-60 pb-60 features-section division">
+				<div class="container">
+
+
+					<!-- SECTION TITLE -->	
+					<div class="row justify-content-center">	
+						<div class="col-lg-10 col-xl-8">
+							<div class="section-title title-01 mb-70">		
+
+								<!-- Title -->	
+								<h2 class="h2-xs">Stories in over 20 languages</h2>	
+
+								<!-- Text -->	
+								<p class="p-xl">Read and listen to stories in various regional accents & dialects
+								</p>
+									
+							</div>	
+						</div>
+					</div>
+
+
+					<!-- FEATURES-1 WRAPPER -->
+					<div class="fbox-1-wrapper text-center">
+						<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+
+
+							<!-- FEATURE BOX #1 -->
+		 					<div class="col">
+		 						<div class="fbox-1 mb-40 wow fadeInUp">
+
+		 							<!-- Icon -->
+									<!--<a href="https://www.flaticon.com/free-icons/languages" title="languages icons">Languages icons created by Freepik - Flaticon</a>-->
+									<div class="fbox-ico-center ico-65">
+										<img src="/assets/templates/images/languages.png">
+									</div>
+
+									<!-- Text -->
+									<div class="fbox-txt-center">
+		
+										<!-- Title -->
+										<h5 class="h5-sm">20 languages</h5>
+											
+										<!-- Text -->
+										<p class="p-lg">Explore stories in 20 different languages</p>
+
+									</div>
+
+		 						</div>
+		 					</div>	
+
+
+		 					<!-- FEATURE BOX #2 -->
+		 					<div class="col">
+		 						<div class="fbox-1 mb-40 wow fadeInUp">
+
+		 							<!-- Icon -->
+									<!--<a href="https://www.flaticon.com/free-icons/speech-bubble" title="speech bubble icons">Speech bubble icons created by Freepik - Flaticon</a>-->
+									<div class="fbox-ico-center ico-65">
+										<img src="/assets/templates/images/language.png">
+									</div>
+
+									<!-- Text -->
+									<div class="fbox-txt-center">
+		
+										<!-- Title -->
+										<h5 class="h5-sm">10 dialects</h5>
+											
+										<!-- Text -->
+										<p class="p-lg">Enjoy listening to content from our library of dialects</p>
+
+									</div>
+
+		 						</div>
+		 					</div>	
+
+
+		 					<!-- FEATURE BOX #3 -->
+		 					<div class="col">
+		 						<div class="fbox-1 mb-40 wow fadeInUp">
+
+		 							<!-- Icon -->
+									<!--<a href="https://www.flaticon.com/free-icons/fairy-tale" title="fairy tale icons">Fairy tale icons created by Freepik - Flaticon</a>-->
+									<div class="fbox-ico-center ico-65">
+										<img src="/assets/templates/images/open-book.png" />
+									</div>
+
+									<!-- Text -->
+									<div class="fbox-txt-center">
+		
+										<!-- Title -->
+										<h5 class="h5-sm">1,000+ stories</h5>
+											
+										<!-- Text -->
+										<p class="p-lg">Find unlimit content from mulitple genre from our story library</p>
+
+									</div>
+
+		 						</div>
+		 					</div>	
+
+
+		 					<!-- FEATURE BOX #4 -->
+		 					<div class="col">
+		 						<div class="fbox-1 mb-40 wow fadeInUp">
+
+		 							<!-- Icon -->
+									<!--<a href="https://www.flaticon.com/free-icons/speak" title="speak icons">Speak icons created by Freepik - Flaticon</a>-->
+									<div class="fbox-ico-center ico-65">
+										<img src="/assets/templates/images/conversation.png" />
+									</div>
+
+									<!-- Text -->
+									<div class="fbox-txt-center">
+		
+										<!-- Title -->
+										<h5 class="h5-sm">3000 dialogues</h5>
+											
+										<!-- Text -->
+										<p class="p-lg">Listen to a quick dialogue in the language of your choice</p>
+
+									</div>
+
+		 						</div>
+		 					</div>	
+
+
+		 				</div>
+					</div>    <!-- END FEATURES-1 WRAPPER -->
+
+
+				</div>     <!-- End container --> 	
+			</section>	<!-- END FEATURES-1 -->
+
+
+
+
+			<!-- CONTENT-3
+			============================================= -->
+			<section id="content-3" class="content-3 bg-lightgrey wide-60 content-section division">
+				<div class="container">
+
+
+					<!-- TOP ROW -->
+					<div class="top-row pb-50">
+						<div class="row d-flex align-items-center">
+
+
+							<!-- IMAGE BLOCK -->
+							<div class="col-md-5 col-lg-6">
+								<div class="img-block left-column wow fadeInRight">
+									<img class="img-fluid" src="/assets/templates/images/reading.png" alt="content-image" style="height:500px;">
+								</div>
+							</div>
+
+
+							<!-- TEXT BLOCK -->	
+							<div class="col-md-7 col-lg-6">
+								<div class="txt-block right-column wow fadeInLeft">
+
+									<!-- Section ID -->	
+						 			<span class="section-id txt-upcase">Adaptable and Simple</span>
+
+									<!-- Title -->	
+									<h3 class="h3-lg">Read Stories Base on your Level & Interest</h3>
+
+									<!-- Title -->	
+									<h5 class="h5-md">Change Stories to Your Level and Region</h5>
+
+									<!-- Text -->	
+									<p class="p-lg">Each story has four levels: <strong>Beginner</strong>,
+										<strong>Intermediate</strong>, <strong>Advance</strong>, and <strong>Native</strong>. The vocabulary, grammar and overall style of writing, changes to fit each respective level.
+									</p>
+
+									<!-- Title -->	
+									<h5 class="h5-md">Listen to Stories in different regional accents</h5>
+									<p class="p-lg">
+										Each story has a listening track. The default track uses the <strong>Standard</strong> for the respective language. You also can choose from 
+										varies accents for each language. For example, Spanish would have the following accents: <strong>Spain</strong>,
+										<strong>Mexico</strong>, <strong>Cuba</strong>, <strong>Peru</strong>, etc.
+									</p>
+									
+									<h5 class="h5-md">Convert stories to learning paths</h5>
+									<p class="p-lg">
+										A learning path includes fun activities to reinforce the vocabulary, grammar and sentence patterns that appears in each respective story.
+									</p>
+								</div>
+							</div>	<!-- END TEXT BLOCK -->	
+
+
+						</div>
+					</div>	<!-- END TOP ROW -->
+				</div>	   <!-- End container -->
+			</section>	<!-- END CONTENT-3 -->
+
+
+
+
+			<!-- FEATURES-4
+			============================================= -->
+			<section id="features-4" class="bg-snow wide-50 features-section division">
+				<div class="container">
+
+
+					<!-- SECTION TITLE -->	
+					<div class="row justify-content-center">	
+						<div class="col-md-10 col-lg-8">
+							<div class="section-title title-02 mb-85">	
+
+								<!-- Section ID -->	
+					 			<span class="section-id txt-upcase">Languages & Dialects</span>		
+
+					 			<!-- Title -->	
+								<h3 class="h3-lg">Our List of Languages Extends Globally</h3>
+
+							</div>	
+						</div>
+					</div>
+
+
+					<!-- FEATURES-4 WRAPPER -->
+					<div class="fbox-4-wrapper fbox-4-wide">
+						<div class="row row-cols-1 row-cols-md-2">
+
+
+							<!-- FEATURE BOX #1 -->
+		 					<div class="col">
+		 						<div class="fbox-4 pr-25 mb-40 wow fadeInUp">
+
+		 							<!-- Icon -->
+									<!--<a href="https://www.flaticon.com/free-icons/people" title="people icons">People icons created by Eucalyp - Flaticon</a>-->
+		 							<div class="fbox-ico">
+		 								<div class="ico-65">
+											<img src="/assets/templates/images/people.png" />
+										</div>
+									</div>
+
+									<!-- Text -->
+									<div class="fbox-txt">
+		
+										<!-- Title -->
+										<h5 class="h5-sm">Indo-European languages</h5>
+											
+										<!-- Text -->
+										<p class="p-lg">
+											The Indo-European language family is one of the world's largest and most widespread language families,
+											encompassing a diverse range of languages spoken across Europe, the Americas, South Asia, and parts of
+											the Middle East. 
+										</p>
+									</div>
+
+		 						</div>
+		 					</div>	
+
+
+		 					<!-- FEATURE BOX #2 -->
+		 					<div class="col">
+		 						<div class="fbox-4 pl-25 mb-40 wow fadeInUp">
+
+		 							<!-- Icon -->
+									 <!--<a href="https://www.flaticon.com/free-icons/rice" title="rice icons">Rice icons created by Freepik - Flaticon</a>-->
+		 							<div class="fbox-ico">
+		 								<div class="ico-65">
+											<img src="/assets/templates/images/rice.png" />
+										</div>
+									</div>
+
+									<!-- Text -->
+									<div class="fbox-txt">
+		
+										<!-- Title -->
+										<h5 class="h5-sm">Sino-Tibetan Languages</h5>
+											
+										<!-- Text -->
+										<p class="p-lg">
+											The Sino-Tibetan language family is one of the world's largest language families,
+											encompassing a wide range of languages spoken across East Asia, Southeast Asia, and parts of South Asia.
+										</p>
+
+									</div>
+
+		 						</div>
+		 					</div>	
+
+
+		 					<!-- FEATURE BOX #3 -->
+		 					<div class="col">
+		 						<div class="fbox-4 pr-25 mb-40 wow fadeInUp">
+
+		 							<!-- Icon -->
+									<!-- <a href="https://www.flaticon.com/free-icons/elephant" title="elephant icons">Elephant icons created by Freepik - Flaticon</a> -->
+		 							<div class="fbox-ico">
+		 								<div class="ico-65">
+											<img src="/assets/templates/images/elephant.png" />
+										</div>
+									</div>
+
+									<!-- Text -->
+									<div class="fbox-txt">
+		
+										<!-- Title -->
+										<h5 class="h5-sm">Afroasiatic Languages</h5>
+											
+										<!-- Text -->
+										<p class="p-lg">
+											The Afroasiatic language family is one of the oldest and most widespread language families,
+											primarily spoken across North Africa, the Horn of Africa, and parts of the Middle East.
+										</p>
+
+									</div>
+
+		 						</div>
+		 					</div>	
+
+
+		 					<!-- FEATURE BOX #4 -->
+		 					<div class="col">
+		 						<div class="fbox-4 pl-25 mb-40 wow fadeInUp">
+
+		 							<!-- Icon -->
+									 <!--<a href="https://www.flaticon.com/free-icons/island" title="island icons">Island icons created by Freepik - Flaticon</a>-->
+		 							<div class="fbox-ico">
+		 								<div class="ico-65">
+											<img src="/assets/templates/images/island.png" />
+										</div>
+									</div>
+
+									<!-- Text -->
+									<div class="fbox-txt">
+		
+										<!-- Title -->
+										<h5 class="h5-sm">Austronesian language family</h5>
+											
+										<!-- Text -->
+										<p class="p-lg">
+											The Austronesian language family is one of the world's largest language families,
+											encompassing a vast array of languages spoken across Southeast Asia, the Pacific Islands, and parts of Madagascar.
+										</p>
+
+									</div>
+
+		 						</div>
+		 					</div>	
+		 				</div>
+					</div>    <!-- END FEATURES-4 WRAPPER -->
+
+
+				</div>     <!-- End container --> 	
+			</section>	<!-- END FEATURES-4 -->
+
+
+
+
+			<!-- CONTENT-6
+			============================================= -->
+			<section id="content-6" class="content-6 bg-whitesmoke wide-60 content-section division">
+			 	<div class="container">
+			 		<div class="row d-flex align-items-center">
+
+
+			 			<!-- TEXT BLOCK -->	
+			 			<div class="col-md-6 col-lg-5">
+			 				<div class="txt-block left-column wow fadeInRight">
+
+			 					<!-- Section ID -->	
+					 			<span class="section-id txt-upcase">Strong Community</span>
+
+			 					<!-- Title -->	
+								<h3 class="h3-lg">Improve Your Learning with Our Community</h3>
+
+								<!-- Text -->
+								<p class="p-lg">We have a strong community across social media platforms to learn, practice and engage other learners and teachers.
+								</p>
+					 		</div>
+					 	</div>	
+
+
+			 			<!-- IMAGE BLOCK -->
+						<div class="col-md-6 col-lg-7">
+							<div class="img-block right-column wow fadeInLeft">
+								<img class="img-fluid" src="/assets/templates/images/community.png" alt="content-image">
+							</div>
+						</div>
+
+
+					</div>     <!-- End row -->
+			 	</div>      <!-- End container -->
+			</section>	 <!-- END CONTENT-6 -->
+
+
+
+
+			<!-- CONTENT-2
+			============================================= -->
+			<section id="content-2" class="content-2 bg-snow wide-60 content-section division">
+				<div class="container">
+
+
+					<!-- SECTION TITLE -->	
+					<div class="row justify-content-center">	
+						<div class="col-lg-10 col-xl-8">
+							<div class="section-title title-01 mb-70">		
+
+								<!-- Title -->	
+								<h2 class="h2-xs">Language List</h2>
+
+								<!-- Text -->	
+								<p class="p-xl">These are the languages and dialects we currently offer on Lingua Stories
+								</p>
+									
+							</div>	
+						</div>
+					</div>
+
+
+					<!-- <div class="row d-flex align-items-center"> -->
+
+					<div class="row d-flex justify-content-center list-of-languages">
+						<div class="col-md-2 col-lg-2">
+							<ul class="language-list">
+								<li class="language-list-parent">Arabic</li>
+								<li class="language-list-sub">
+									<ul class="language-sublist">
+										<li>Egypt</li>
+										<li>Standard</li>
+									</ul>
+								</li>
+								<li class="language-list-parent">Cambodia</li>
+								<li class="language-list-parent">Chinese (Mandarin)</li>
+								<li class="language-list-sub">
+									<ul class="language-sublist">
+										<li>Beijing</li>
+										<li>Guangzhou</li>
+										<li>Nanjing</li>
+										<li>Shanghai</li>
+										<li>Sichuan</li>
+										<li>Singapore</li>
+										<li>Taiwan</li>
+									</ul>
+								</li>
+								<li class="language-list-parent">Chinese (Cantonese)</li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-lg-2">
+							<ul class="language-list">
+								<li class="language-list-parent">Dutch</li>
+								<li>
+									<ul class="language-sublist">
+										<li>Belgium</li>
+										<li>Holland</li>
+									</ul>
+								</li>
+								<li class="language-list-parent">French</li>
+								<li>
+									<ul class="language-sublist">
+										<li>Haiti</li>
+										<li>Morocco</li>
+										<li>Paris</li>
+										<li>Quebec</li>
+									</ul>
+								</li>
+								<li class="language-list-parent">German</li>
+								<li class="language-list-parent">Japanese</li>
+								<li>
+									<ul>
+										<li>Tokyo</li>
+										<li>Osaka</li>
+									</ul>
+								</li>
+								<li class="language-list-parent">Korean</li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-lg-2">
+							<ul class="language-list">
+								<li class="language-list-parent">Spanish</li>
+								<li class="language-list-sub">
+									<ul class="language-sublist">
+										<li>Argentina</li>
+										<li>Costa Rica</li>
+										<li>Cuba</li>
+										<li>Dominican Republic</li>
+										<li>El Salvador</li>
+										<li>Mexico</li>
+										<li>Peru</li>
+										<li>Spain</li>
+									</ul>
+								</li>
+								<li class="language-list-parent">Portuguese</li>
+								<li>
+									<ul class="language-sublist">
+										<li>Portugal</li>
+										<li>Brazil</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-2 col-lg-2">
+							<ul class="language-list">
+								<li class="language-list-parent">Indonesia</li>
+								<li>
+									<ul class="language-sublist">
+										<li>Jakarta</li>
+										<li>Kalimantan</li>
+										<li>Sulawesi</li>
+									</ul>
+								</li>
+								<li class="language-list-parent">Malay</li>
+								<li class="language-list-parent">Tagalog</li>
+								<li class="language-list-parent">Thai</li>
+								<li class="language-list-parent">Vietnam</li>
+									<li>
+										<ul class="language-sublist">
+											<li>Phan Thiet</li>
+											<li>Ho Chi</li>
+										</ul>
+									</li>
+							</ul>
+						</div>	
+					</div>	   <!-- End row -->
+				</div>	   <!-- End container -->
+			</section>	<!-- END CONTENT-2 -->
+
+			<!-- DIVIDER LINE -->
+			<hr class="divider">
+
+			<!-- PRICING-3
+			============================================= -->
+			<section id="pricing-3" class="bg-whitesmoke wide-60 pricing-section division">
+				<div class="container">
+
+
+					<!-- SECTION TITLE -->	
+					<div class="row justify-content-center">	
+						<div class="col-md-10 col-lg-8">
+							<div class="section-title title-02 mb-85">
+
+								<!-- Section ID -->	
+					 			<span class="section-id txt-upcase">Pricing & Packages</span>			
+
+								<!-- Title -->	
+								<h3 class="h3-lg">Jump Start your Language Learning with our Platform</h3>
+
+								<!-- Text -->	
+								<p class="p-xl">
+									The Lingua Stories platform will boost your listening and understanding dramatically. See the below plans & packaging tiers to see what fits you and kickstart your learning.
+								</p>	
+
+							</div>	
+						</div>
+					</div>
+
+
+					<!-- PRICING TABLES -->
+					<div class="pricing-3-row pc-20">
+						<div class="row row-cols-1 row-cols-md-3">
+
+
+							<!-- STARTER PLAN -->
+							<div class="col">
+								<div class="pricing-3-table bg-white mb-40 wow fadeInUp">	
+													
+									<!-- Plan Price  -->
+									<div class="pricing-plan">
+										<h6 class="h6-md">Free Tier</h6>									
+										<sup class="dark-color">$</sup>								
+										<span class="price dark-color">0</span>
+										<sup class="coins dark-color"></sup>
+										<p class="p-lg">Monthly Payment</p>
+									</div>	
+												
+									<!-- Plan Features  -->
+									<ul class="features">
+										<li><p class="p-md">Over 100 stories to read</p></li>
+										<li><p class="p-md"><span>Listening Track with 2 accents</span></p></li>
+										<li><p class="p-md"><span>Access our Community</span></p></li>
+										<li><p class="p-md">Limited Access to LinguaStories Teacher</p></li>
+										<li><p class="p-md">Accent/Reading Practice</p></li>
+									</ul>
+
+									<!-- Pricing Plan Button -->
+									<a href="#" class="btn btn-tra-grey tra-skyblue-hover">Get Started</a>
+
+								</div>
+							</div>	<!-- END STARTER PLAN -->
+
+
+							<!-- BASIC PLAN -->
+							<div class="col">
+								<div class="pricing-3-table bg-white rel mb-40 wow fadeInUp">	
+
+									<!-- Hightlight Badge -->
+									<div class="badge-wrapper">
+										<div class="highlight-badge bg-skyblue white-color" style="background-color: #e07258; border: 1px solid #e07258; color: #FFF;">
+											<h6 class="h6-md">Most Popular</h6>
+										</div>
+									</div>	
+													
+									<!-- Plan Price  -->
+									<div class="pricing-plan">
+										<h6 class="h6-md">Basic Tier</h6>									
+										<sup class="dark-color">$</sup>								
+										<span class="price dark-color">4</span>
+										<sup class="coins dark-color">99</sup>
+										<p class="p-lg">Monthly Payment</p>
+									</div>	
+												
+									<!-- Plan Features  -->
+									<ul class="features">
+										<li><p class="p-md">All Stories in Our Database</p></li>
+										<li><p class="p-md"><span>Listening Track with all accents</span></p></li>
+										<li><p class="p-md">Access our Community</p></li>
+										<li><p class="p-md">Access to Story Activities/Games</p></li>
+										<li><p class="p-md">Limited Access to LinguaStories Teacher</p></li>
+										<li><p class="p-md"></p></li>
+									</ul>
+
+									<!-- Pricing Plan Button -->
+									<a href="#" class="btn" style="background-color: #e07258; border: 1px solid #e07258; color: #FFF;">Get Started</a>
+
+								</div>
+							</div>	<!-- END BASIC PLAN -->
+
+
+							<!-- PREMIUM PLAN -->
+							<div class="col">
+								<div class="pricing-3-table bg-white mb-40 wow fadeInUp">	
+													
+									<!-- Plan Price  -->
+									<div class="pricing-plan">
+										<h6 class="h6-md">Premium Tier</h6>									
+										<sup class="dark-color">$</sup>								
+										<span class="price dark-color">10</span>
+										<sup class="coins dark-color">99</sup>
+										<p class="p-lg">Monthly Payment</p>
+									</div>	
+												
+									<!-- Plan Features  -->
+									<ul class="features">
+										<li><p class="p-md">All Stories in Our Database</p></li>
+										<li><p class="p-md"><span>Listening Track with all accents</span></p></li>
+										<li><p class="p-md">Access our Community</p></li>
+										<li><p class="p-md">Access to Story Activities/Games</p></li>
+										<li><p class="p-md">Access to LinguaStories Teacher</p></li>
+										<li><p class="p-md">Accent/Reading Practice</p></li>
+									</ul>
+
+									<!-- Pricing Plan Button -->
+									<a href="#" class="btn btn-tra-grey tra-skyblue-hover">Get Started</a>
+
+								</div>
+							</div>	<!-- END PREMIUM PLAN -->
+						</div>
+					</div>	<!-- END PRICING TABLES -->
+				</div>	   <!-- End container -->
+			</section>	<!-- END PRICING-3 -->
+
+
+
+
+			<!-- FAQs-2
+			============================================= -->
+			<section id="faqs-2" class="bg-snow wide-60 faqs-section division">				
+				<div class="container">
+
+
+					<!-- SECTION TITLE -->	
+					<div class="row justify-content-center">	
+						<div class="col-md-10 col-lg-8">
+							<div class="section-title title-02 mb-75">			
+
+								<!-- Section ID -->	
+					 			<span class="section-id txt-upcase">Frequently Asked Questions</span>				
+
+								<!-- Title -->	
+								<h3 class="h3-lg">Everything you need to know before getting started</h3>
+
+							</div>	
+						</div>
+					</div>
+
+
+					<!-- FAQs-2 QUESTIONS -->	
+					<div class="faqs-2-questions">
+						<div class="row row-cols-1 row-cols-lg-2">
+						
+
+							<!-- QUESTIONS HOLDER -->
+							<div class="col">
+								<div class="questions-holder pr-15">
+									<!-- QUESTION #1 -->
+									<div class="question wow fadeInUp">
+										<!-- Question -->
+										<h5 class="h5-sm">Can I see Lingua Stories in action before purchasing?</h5>
+
+										<!-- Answer -->
+										<p class="p-lg">
+											Yes, there is a 14 free day trial. There is also a lifetime free tier.
+											This tier includes a number of stories and all features.
+										</p>
+									</div>	
+
+
+									<!-- QUESTION #2 -->					
+									<div class="question wow fadeInUp">
+
+										<!-- Question -->
+										<h5 class="h5-sm">What are the requirements for using Lingua Stories?</h5>
+
+										<!-- Answer -->
+										<p class="p-lg">
+											Commitment! :)
+										</p>
+
+									</div>
+
+
+									<!-- QUESTION #3 -->					
+									<div class="question wow fadeInUp">
+
+										<!-- Question -->
+										<h5 class="h5-sm">Can I use Lingua Stories on different devices?</h5>
+
+										<!-- Answer -->
+										<p class="p-lg">
+											There is a web version that is mobile friendly. There is also a mobile app in the works for both Android and iPhone.
+										</p>
+									</div>
+
+
+								</div>
+							</div>	<!-- END QUESTIONS HOLDER -->
+
+
+							<!-- QUESTIONS HOLDER -->
+							<div class="col">
+								<div class="questions-holder pl-15">
+
+								
+									<!-- QUESTION #4 -->					
+									<div class="question wow fadeInUp">
+
+										<!-- Question -->
+										<h5 class="h5-sm">Will there be more languages?</h5>
+
+										<!-- Answer -->
+										<p class="p-lg">
+											Yes, we are actively planning to add more languages. Stay tune!
+										</p>
+
+									</div>
+
+										
+									<!-- QUESTION #5 -->
+									<div class="question wow fadeInUp">
+
+										<!-- Question -->
+										<h5 class="h5-sm">How often do you add new stories?</h5>
+
+										<!-- Answer -->
+										<p class="p-lg">
+											We add new stories each week for each language.
+										</p>
+									</div>
+
+
+									<!-- QUESTION #6 -->
+									<div class="question wow fadeInUp">
+
+										<!-- Question -->
+										<h5 class="h5-sm">I have an issue with my account</h5>
+
+										<!-- Answer -->
+										<p class="p-lg">
+											Please contact us at linguastories19@gmail.com
+										</p>
+									</div>
+
+
+								</div>
+							</div>	<!-- END QUESTIONS HOLDER -->
+
+
+						</div>	<!-- End row -->
+					</div>	<!-- END FAQs-2 QUESTIONS -->	
+
+
+					<!-- MORE QUESTIONS BUTTON -->	
+					<!-- <div class="row">
+						<div class="col">	
+							<div class="more-questions">
+								<h5 class="h5-sm">Have more questions? <a href="contacts.html">Ask your question here</a></h5>
+							</div>
+						</div>
+					</div> -->
+
+
+				</div>	   <!-- End container -->		
+			</section>	<!-- END FAQs-2 -->
+
+
+
+
+			<!-- CALL TO ACTION-1
+			============================================= -->
+			<section id="cta-1" class="bg-snow cta-section division">
+				<div class="container">
+					<div class="rel bg-white cta-1-wrapper">
+						<div class="row d-flex align-items-center">
+
+
+							<!-- CALL TO ACTION TEXT -->
+							<div class="col-lg-8">
+								<div class="cta-1-txt">
+									<h4 class="h4-xl">Try LinguaStories free for 14 days. Start your trial now and pick a plan later</h4>
+								</div>
+							</div>
+
+
+							<!-- CALL TO ACTION BUTTON -->
+							<div class="col-lg-4">
+								<div class="text-end">
+									<div class="cta-1-btn text-center">
+										<button type="submit" class="btn btn-md submit" style="background-color: #e07258; border: 1px solid #e07258; color: #FFF;">Get Started Now</button>
+								</div>
+							</div>
+
+
+						</div>
+					</div>    <!-- End row -->
+				</div>	   <!-- End container -->	
+			</section>	<!-- END CALL TO ACTION-1 -->
+
+
+
+
+			<!-- FOOTER-1
+			============================================= -->
+			<footer id="footer-1" class="bg-snow footer division">
+				<div class="container">
+
+
+					<!-- FOOTER CONTENT -->
+					<div class="row">	
+
+
+						<!-- FOOTER INFO -->
+						<div class="col-lg-4">
+							<div class="footer-info mb-40">
+
+								<!-- Footer Logo -->	
+								<div style="display:flex; align-items: center; justify-content: center;">
+									<img src="/assets/templates/images/linguastories.png" alt="footer-logo" style="height:200px">
+								</div>
+
+								<!-- Text -->	
+								<p class="p-md">
+									The language platform to learn languages through stories, active listening practice and an engaging community.
+								</p>
+
+							</div>	
+						</div>	
+
+
+						<!-- FOOTER LINKS -->
+						<div class="col-sm-6 col-md-3 col-lg-2">
+							<div class="footer-links mb-40">
+							
+								<!-- Title -->
+								<h6 class="h6-xl">Company</h6>
+
+								<!-- Footer Links -->
+								<ul class="foo-links text-secondary clearfix">
+									<li><p class="p-md"><a href="#">About Us</a></p></li>
+									<li><p class="p-md"><a href="#">Contact Us</a></p></li>							
+								</ul>
+
+							</div>
+						</div>
+
+
+						<!-- FOOTER LINKS -->
+						<div class="col-sm-6 col-md-3 col-lg-2">
+							<div class="footer-links mb-40">
+												
+								<!-- Title -->
+								<h6 class="h6-xl">Discover</h6>
+
+								<!-- Footer List -->
+								<ul class="foo-links text-secondary clearfix">
+									<li><p class="p-md"><a href="#">Our Blog</a></p></li>
+									<li><p class="p-md"><a href="#">Testimonials</a></p></li>							
+								</ul>
+
+							</div>	
+						</div>
+
+
+						<!-- FOOTER LINKS -->
+						<div class="col-sm-6 col-md-3 col-lg-2">
+							<div class="footer-links mb-40">
+							
+								<!-- Title -->
+								<h6 class="h6-xl">Legal</h6>
+
+								<!-- Footer List -->
+								<ul class="foo-links text-secondary clearfix">							
+									<li><p class="p-md"><a href="#">Terms of Use</a></p></li>										
+									<li><p class="p-md"><a href="#">Privacy Policy</a></p></li>
+								</ul>
+
+							</div>
+						</div>
+
+
+						<!-- FOOTER LINKS -->
+						<div class="col-sm-6 col-md-3 col-lg-2">
+							<div class="footer-links mb-40">
+							
+								<!-- Title -->
+								<h6 class="h6-xl">Support</h6>
+
+								<!-- Footer Links -->
+								<ul class="foo-links text-secondary clearfix">
+									<li><p class="p-md"><a href="#">FAQs</a></p></li>
+									<li><p class="p-md"><a href="#">Community</a></p></li>											
+								</ul>
+
+							</div>
+						</div>
+
+
+					</div>	<!-- END FOOTER CONTENT -->
+
+
+					<hr>
+
+
+					<!-- BOTTOM FOOTER -->
+					<div class="bottom-footer">
+						<div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
+
+
+							<!-- FOOTER COPYRIGHT -->
+							<div class="col">
+								<div class="footer-copyright">
+									<p>&copy; 2024 LinguaStories. All Rights Reserved</p>
+								</div>
+							</div>
+
+
+							<!-- BOTTOM FOOTER LINKS -->
+							<div class="col">
+								<ul class="bottom-footer-list text-secondary text-end">
+									<li class="first-li"><p><a href="#">Facebook</a></p></li>
+									<li><p><a href="#">Twitter</a></p></li>
+									<li><p><a href="#">LinkedIn</a></p></li>	
+									<li class="last-li"><p><a href="#">Instagram</a></p></li>
+								</ul>
+							</div>
+
+
+						</div>  <!-- End row -->
+					</div>	<!-- BOTTOM FOOTER -->
+
+
+				</div>
+			</footer>	<!-- END FOOTER-1 -->
+		</div>	<!-- END PAGE CONTENT -->	
+
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->	
+		<script src="/assets/templates/js/jquery-3.6.0.min.js"></script>
+		<script src="/assets/templates/js/bootstrap.min.js"></script>	
+		<script src="/assets/templates/js/modernizr.custom.js"></script>
+		<script src="/assets/templates/js/jquery.easing.js"></script>
+		<script src="/assets/templates/js/jquery.appear.js"></script>
+		<script src="/assets/templates/js/jquery.scrollto.js"></script>	
+		<script src="/assets/templates/js/menu.js"></script>
+		<script src="/assets/templates/js/imagesloaded.pkgd.min.js"></script>
+		<script src="/assets/templates/js/isotope.pkgd.min.js"></script>
+		<script src="/assets/templates/js/owl.carousel.min.js"></script>
+		<script src="/assets/templates/js/jquery.magnific-popup.min.js"></script>
+		<script src="/assets/templates/js/quick-form.js"></script>	
+		<script src="/assets/templates/js/request-form.js"></script>	
+		<script src="/assets/templates/js/jquery.validate.min.js"></script>
+		<script src="/assets/templates/js/jquery.ajaxchimp.min.js"></script>	
+		<script src="/assets/templates/js/wow.js"></script>
+				
+		<!-- Custom Script -->		
+		<script src="/assets/templates/js/custom.js"></script>
+	</body>
 </html>
