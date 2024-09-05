@@ -95,6 +95,26 @@ app.get("/dashboard", (req, res) => {
     res.status(200).sendFile(path.join(__dirname, "/dashboard.html"));
 });
 
+app.get("/login", (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, "/login.html"));
+});
+
+app.get("/story/:id", (req, res) => {
+    res.status(200).sendFile(path.join(__dirname, "/template/bostami-template/index - Copy.html"));
+});
+
+const db = require("./data");
+
+app.get("/api/story/:id", async (req, res) => {
+    const data = await db.story.getStory({ id: req.params.id });
+    res.status(200).json(data);
+});
+
+app.get("/api/story/:id/words", async (req, res) => {
+    const data = await db.storyWords.getStoryWords({ id: req.params.id });
+    res.status(200).json(data);
+});
+
 app.all("*", (req, res) => {
     if (req.path.indexOf("/api/") > -1) {
         res.setHeader("Content-Type", "application/json");

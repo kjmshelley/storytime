@@ -7,19 +7,19 @@
     <title>LinguaStories - Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/templates/bostami-template/img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/odometer.min.css">
-    <link rel="stylesheet" href="assets/css/jquery.modal.min.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/css/swipper.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="/assets/templates/bostami-template/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/templates/bostami-template/css/animate.min.css">
+    <link rel="stylesheet" href="/assets/templates/bostami-template/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/templates/bostami-template/css/all.min.css">
+    <link rel="stylesheet" href="/assets/templates/bostami-template/css/odometer.min.css">
+    <link rel="stylesheet" href="/assets/templates/bostami-template/css/jquery.modal.min.css">
+    <link rel="stylesheet" href="/assets/templates/bostami-template/css/meanmenu.css">
+    <link rel="stylesheet" href="/assets/templates/bostami-template/css/swipper.css">
+    <link rel="stylesheet" href="/assets/templates/bostami-template/css/main.css">
 
     <style>
         header {
@@ -27,9 +27,9 @@
             flex-direction: row;
             align-items: center;
         }
-        .header-logo img { width: 30px; }
+        .header-logo img { height: 50px; }
         .header-title {
-            font-size: 2rem;
+            /* font-size: 2rem; */
             font-weight: bold;
             margin-left: 5px;
         }
@@ -41,7 +41,8 @@
         .text-bold { font-weight: 900; }
 
         .text-highlight:hover {
-            background-color: rgb(218, 218, 143);
+            background-color: rgb(247, 247, 0);
+            padding: 3px 3px 1px 1px;
         }
 
         .bx-outline:hover {
@@ -49,12 +50,49 @@
             border: 1px solid blue;
             border-radius: 10px;
         }
+
+        .sentence-line {
+            display: flex;
+            flex-direction: row;
+            gap: 20px 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .sentence-word {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .word-margin-right {
+            margin-right: 15px;
+        }
+
+        .sentence-word-center {
+            text-align: center;
+        }
+
+        .sentence ruby {
+            line-height: 1em;
+            text-align: center;
+            text-indent: 0;
+        }
+        ruby {
+            ruby-align: center;
+        }
+
+        
+
+        .sentence {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="page-wrapper home-1" data-background="assets/img/bg/page-bg-1.jpg">
+    <div class="page-wrapper home-1" data-background="/assets/templates/bostami-template/img/bg/page-bg-1.jpg">
 
         <!-- PRELOADER -->
         <div id="preloader">
@@ -72,15 +110,8 @@
                         <div class="col-6">
                             <header class="section-header">
                                 <div class="header-logo">
-                                    <img src="assets/img/logo.svg" />
+                                    <img src="/assets/templates/bostami-template/img/logo-header.png" />
                                 </div>
-                                <div class="header-title">
-                                    <span style="color:#9575DE">Lingua</span>
-                                    <span style="color:#E966A0">Stories</span>
-                                </div>
-                                <!-- <a class="site-logo" href="../index.html">
-                                    <img src="assets/img/logo/logo-2.png" alt="">
-                                </a> -->
                             </header>
                         </div>
 
@@ -122,14 +153,14 @@
 
                             <!-- img -->
                             <div class="bostami-parsonal-info-img">
-                                <img src="assets/img/xiaoli.jpg" alt="avatar">
+                                <img src="/assets/templates/bostami-template/img/xiaoli.jpg" alt="avatar">
                             </div>
 
                             <!-- name -->
                             <h4 class="bostami-parsonal-info-name">
-                                <a href="#">Xiao Li Goes to the Airport</a>
+                                <a href="#" id="story-title"></a>
                             </h4>
-                            <span class="bostami-parsonal-info-bio mb-15">airport</span>
+                            <span class="bostami-parsonal-info-bio mb-15" id="story-tags">airport</span>
 
                             <!-- socail link -->
                             <ul class="bostami-parsonal-info-social-link mb-30">
@@ -162,7 +193,7 @@
                                         <i class="fa-duotone fa-text-size"></i>
                                     </div>
                                     <div class="text">
-                                        <p>Show PINYIN</p>
+                                        <p id="page_story_show_transliteration">Show PINYIN</p>
                                     </div>
                                 </div>
 
@@ -171,7 +202,7 @@
                                         <i class="fa-solid fa-text"></i>
                                     </div>
                                     <div class="text">
-                                        <p>Show English</p>
+                                        <p id="page_story_show_english">Show English</p>
                                     </div>
                                 </div>
 
@@ -235,42 +266,14 @@
 
                         <!-- page title -->
                         <div class="section-wrapper pl-60 pr-60 pt-60">
-                            <div id="storyContainer" class="bostami-page-title-wrap mb-35">
-                                <h2 class="page-title">小麗搭飛機</h2>
-                                <!-- <p class="text"><span class="text-bold">電視:</span> 今天的天氣是34度。</p>
-
-                                <p class="text"><span class="text-bold">小麗:</span> ”呃～好吵！”小麗剛被電視吵醒了。</p>
-                                    
-                                <p class="text"><span class="text-bold">媽:</span> 小麗！小麗！快點起床！你快要來不及上飛機了。</p>
-                                    
-                                <p class="text"><span class="text-bold">小麗刷著牙對媽媽喊:</span> 「媽！電視幹嘛這麼大聲啊！」</p>
-                                    
-                                <p class="text"><span class="text-bold">媽:</span> 快點快點小丫頭！</p>
-                                    
-                                <p class="text"><span class="text-bold">小麗:</span> 好了好了。</p>
-                                    
-                                <p class="text"><span class="text-bold">小麗:</span> 慘了！媽，我的手機呢？</p>
-                                    
-                                <p class="text"><span class="text-bold">媽:</span> 我怎麼知道你的手機放在哪？</p>
-                                    
-                                <p class="text">你看房間這麼亂，難怪找不到東西。</p>
-                                    
-                                <p class="text">計程車來了，快點！</p>
-                                    
-                                <p class="text"><span class="text-bold">小麗:</span> 找到了！好，到紐約會聯絡你。</p>
-                                    
-                                <p class="text"><span class="text-bold">媽:</span> 寶貝，注意安全喔～</p> -->
-                                    
+                            <div class="bostami-page-title-wrap mb-35">
+                                <h2 class="page-title" id="page-story-title"></h2>
+                                <div id="page-story-container"></div>
                             </div>
                         </div>
 
                         <!-- what-do -->
                         <div class="section-wrapper pl-60 pr-60">
-
-                            <!-- <div class="bostami-section-title-wrap mb-30">
-                                <h3 class="section-title">Dive Deeper!</h3>
-                            </div> -->
-
                             <div class="bostami-what-do-wrap mb-30">
                                 <div class="row">
 
@@ -331,7 +334,7 @@
 
                         <!-- footer copyright -->
                         <div class="footer-copyright text-center pt-25 pb-25">
-                            <span>© 2023 All Rights Reserved by Lingua Stories.</span>
+                            <span>© 2024 All Rights Reserved by Lingua Stories.</span>
                         </div>
 
                     </div>
@@ -394,17 +397,127 @@
     </div>
 
     <!-- JS here -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swipper-bundle.min.js"></script>
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/jquery.modal.min.js"></script>
-    <script src="assets/js/appear.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/templates/bostami-template/js/jquery.min.js"></script>
+    <script src="/assets/templates/bostami-template/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/templates/bostami-template/js/swipper-bundle.min.js"></script>
+    <script src="/assets/templates/bostami-template/js/jquery.meanmenu.min.js"></script>
+    <script src="/assets/templates/bostami-template/js/wow.min.js"></script>
+    <script src="/assets/templates/bostami-template/js/odometer.min.js"></script>
+    <script src="/assets/templates/bostami-template/js/jquery.modal.min.js"></script>
+    <script src="/assets/templates/bostami-template/js/appear.min.js"></script>
+    <script src="/assets/templates/bostami-template/js/main.js"></script>
 
-    <script src="assets/js/app.js"></script>
+    <script src="/assets/templates/bostami-template/js/app.js"></script>
+
+
+    <script>
+        const storyTitle = document.querySelector("#story-title");
+        const storyTags = document.querySelector("#story-tags");
+        const pageStoryTitle = document.querySelector("#page-story-title");
+        const pageStoryContainer = document.querySelector("#page-story-container");
+        const pageStoryShowTransliteration = document.querySelector("#page_story_show_transliteration");
+        const pageStoryShowEnglish = document.querySelector("#page_story_show_english");
+
+        let showTransliteration = false;
+        let showTranslation = false;
+
+        let story = [];
+        let words = [];
+
+        pageStoryShowTransliteration.addEventListener("click", evt => {
+            pageStoryShowTransliteration.innerText = (!showTransliteration ? "Hide ": "Show ") + " PINYIN";
+            showTransliteration = !showTransliteration;
+            loadStory();
+        });
+
+        pageStoryShowEnglish.addEventListener("click", evt => {
+            pageStoryShowEnglish.innerText = (!showTranslation ? "Hide ": "Show ") + " English";
+            showTranslation = !showTranslation;
+            loadStory();
+        });
+
+        async function getStory() {
+            const storyId = location.href.split("/").at(-1);
+
+            const storyResp = await fetch(`/api/story/${storyId}`);
+            const wordsResp = await fetch(`/api/story/${storyId}/words`);
+
+            story = await storyResp.json();
+            words = await wordsResp.json();
+        }
+
+        function loadStory() {
+            pageStoryContainer.innerHTML = "";
+
+            storyTitle.innerHTML = story.at(0).name;
+            //storyTags.innerHTML = "";
+            pageStoryTitle.innerHTML = story.at(0).tl_name;
+
+            let pageId = -1;
+            let idx = -1;
+            let sc = "";
+            
+            let sentences = [];
+            // separate words into sentences
+            words.forEach(w => {
+                if (pageId != w.story_content_id) {
+                    idx++;
+                    pageId = w.story_content_id;
+                    sentences.push([]);
+                }
+                sentences.at(idx).push(w);
+            });
+
+            sentences.forEach(words => {
+                sc += `<div class="text sentence sentence-line">`;
+                sc += words.map((w, idx) => {
+                    let {
+                        id,
+                        story_content_id,
+                        word,
+                        tl_word,
+                        tl_transliteration_word,
+                        word_type
+                    } = w;
+                    
+                    if (word_type == "punc") return "";
+                    //if (tl_word === "-") tl_word = "";
+
+                    let mr = "";
+                    let extraWordTL = "", extraWord = "", extraTTW = "";
+                    if (words[idx + 1] && words[idx + 1].word_type == "punc" ) {
+                        mr = "word-margin-right";
+                        extraWord = words[idx + 1].word;
+                        extraWordTL = words[idx + 1].tl_word;
+                        extraWordTTW = words[idx + 1].tl_transliteration_word;
+                    }
+                    let h = `<div class="sentence-word ${mr}">`;
+                    h += `<div style="text-align:center">`;
+                    h += `<ruby>`;
+                    h += `<rb class="text-highlight" data-value="${id}">${word}</rb><span>${extraWord}</span>`;
+                    
+                    if (showTransliteration) {
+                        h += `<rt style="font-size:14px">${tl_transliteration_word}${extraTTW}</rt>`;
+                    }
+                    h += "</ruby>";
+                    h += "</div>";
+                    
+                    if (showTranslation) {
+                        h += `<div>${tl_word}${extraWordTL}</div>`;
+                    }
+                    h += "</div>";
+                    return h;
+                }).join("");
+                sc += "</div>";
+            });
+            pageStoryContainer.innerHTML += sc;
+        }
+
+        (async () => {
+            await getStory();
+            loadStory();
+        })();
+    </script>
 </body>
 
 </html>
